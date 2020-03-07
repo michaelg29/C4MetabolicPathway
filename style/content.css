@@ -1,0 +1,148 @@
+#content-wrapper {
+    height: calc(100% - 60px - 100px);
+    
+    width: 100%;
+
+    padding: 0 30px;
+}
+
+#content-wrapper {
+    overflow: auto;
+}
+
+.home-screen {
+    background-image: url("/C4-Metabolic-Pathway/cgi-bin/corn.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+.home-screen > h1 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 72px;
+    margin-top: 15%;
+}
+
+.a-button {
+    padding: 15px;
+    background-color: #1f2227;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 3px solid white;
+    cursor: pointer;
+
+    transition: all 250ms;
+}
+
+.a-button:hover {
+    background-color: white;
+    color: #1f2227;
+    border-color: #1f2227;
+}
+
+.button-row {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+@media (orientation: portrait) {
+    .home-screen > div {
+        display: none;
+    }
+}
+
+.content-paragraph {
+    padding: 15px;
+}
+
+.expand-area {
+    background-color: #1f2227;
+    color: white;
+    border-radius: 15px;
+    padding: 0 5px;
+}
+
+.expandable-content {
+    background-color: white;
+    color: #1f2227;
+    border-radius: 15px;
+  
+    padding: 15px;
+    border: 3px solid #4b4e52;
+
+    position: absolute;
+    top: 25%;
+    left: 25%;
+
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+
+    width: 50%;
+    height: 50%;
+  
+    transition: all 250ms;
+}
+
+.expandable-content > img {
+    height: 75%;
+    max-width: 75%;
+}
+
+.expand-area:hover {
+    background-color: #4b4e52;
+}
+
+.expand-area:hover > .expandable-content {
+    opacity: 1;
+    visibility: visible;
+    z-index: 5;
+}
+
+.works-cited-doc {
+    width: 9in;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.steps {
+    position: relative;
+}
+
+.step-content > .text, .step-content > .visual {
+    padding: 15px;
+}
+
+.visual > img {
+    width: 100%;
+}
+
+.step {
+    position: absolute;
+    top: 0;
+    left: 2%;
+    height: 96%;
+    width: 90%;
+    border: 3px solid #1f2227;
+    border-radius: 15px;
+    padding: 0 15px;
+
+    visibility: hidden;
+}
+
+.navigation {
+    position: absolute;
+    top: 8%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation > a.a-button {
+    margin-right: 15px;
+}

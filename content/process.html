@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" lang="en"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>C4 Metabolic Pathway</title>
+
+        <link rel="shortcut icon" type="image/png" href="/C4-Metabolic-Pathway/cgi-bin/corn.png"/>
+        
+        <link rel="stylesheet" type="text/css" href="/C4-Metabolic-Pathway/style/style.css"/>
+        <link rel="stylesheet" type="text/css" href="/C4-Metabolic-Pathway/style/nav.css"/>
+        <link rel="stylesheet" type="text/css" href="/C4-Metabolic-Pathway/style/content.css"/>
+        <link rel="stylesheet" type="text/css" href="/C4-Metabolic-Pathway/style/footer.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section>
+            <div id="nav-wrapper">
+                <div class="row">
+                    <div class="nav-col-1">
+                        <a class="nav-item nav-action small-nav nav-header" target="_top" href="/C4-Metabolic-Pathway/index.html">C<sub>4</sub> Metabolic Pathway</a>
+                    </div>
+
+                    <div class="nav-col-2">
+                        <label for="nav-status" id="nav-label" class="small-nav">
+                            <span class="fa fa-bars nav-item nav-action small-nav open-nav" id="open-menu-button"></span>
+                        </label>
+                    </div>
+                </div>
+                <input type="checkbox" id="nav-status"/>
+                
+                <ul id="nav-list">
+                    <li class="nav-item small-nav close-nav">
+                        <label for="nav-status" id="close-nav-label">
+                            <span class="fa fa-close nav-action" id="close-menu-button"></span>
+                        </label>
+                    </li>
+    
+                    <li class="nav-item full-width">
+                        <a class="nav-action full-width" target="_top" href="/C4-Metabolic-Pathway/index.html" title="Home">C4 Metabolic Pathway</a>
+                    </li>
+    
+                    <li class="nav-item full-width">
+                        <a class="nav-action full-width" target="_top" href="/C4-Metabolic-Pathway/content/summary.html" title="Summary">Summary</a>
+                    </li>
+
+                    <li class="nav-item full-width">
+                        <a class="nav-action full-width" target="_top" href="/C4-Metabolic-Pathway/content/process.html" title="Process">Process</a>
+                    </li>
+
+                    <li class="nav-item full-width">
+                        <a class="nav-action full-width" target="_top" href="/C4-Metabolic-Pathway/content/conclusion.html" title="Importance">Importance</a>
+                    </li>
+
+                    <li class="nav-item full-width">
+                        <a class="nav-action full-width" target="_top" href="/C4-Metabolic-Pathway/content/worksCited.html" title="Works Cited">Works Cited</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="content-wrapper">
+                <h1>The Process</h1>
+
+                <div class="steps">
+                    <div class="step" id="step1">
+                        <h1>Step 1: Carbon Dioxide Enters the Leaf</h1>
+                        <div class="step-content row">
+                            <div class="text col-6">
+                                One molecule of CO2 enters a mesophyll cell via a stoma.
+                            </div>
+                            <div class="visual col-6">
+                                <img src="/C4-Metabolic-Pathway/cgi-bin/step1.png"/>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="step" id="step2">
+                        <h1>Step 2: Carbon Dioxide and Phosphoenolpyruvate (PEP) React</h1>
+                        <div class="step-content row">
+                            <div class="text col-6">
+                                The CO2 that just entered the cell then reacts with PEP in the enzyme PEP carboxylase. The PEP is a 3 carbon molecule, and fixing one CO2 molecule onto it will synthesize the 4 carbon molecule, oxaloacetate.
+                                <br/><br/>
+                                PEP Carboxylase has no affinity for oxygen, so it will not react with it even if the oxygen is present in the cell.
+                            </div>
+                            <div class="visual col-6">
+                                <h1 class="reaction-equation">
+                                    CO<sub>2</sub> + PEP &#8594; PEP Carboxylase &#8594; Oxaloacetate
+                                </h1>
+                                <img src="/C4-Metabolic-Pathway/cgi-bin/step2.png"/>
+                                <a href="https://fastly.kastatic.org/ka-perseus-images/6576c0741e1ab2544d153c54b4e9baa9a5c6248c.png">Source: Khan Academy</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="step" id="step3">
+                        <h1>Step 3: The Oxaloacetate is Converted to Malate</h1>
+                        <div class="step-content row">
+                            <div class="text col-6">
+                                Using the products of the light dependent reactions, NADPH and H+, Oxaloacetate is converted to Malate, which is also a 4 carbon molecule. This process releases NADP+ back to the light dependent reactions. This reaction is catalyzed by the enzyme malate dehydrogenase.
+                            </div>
+                            <div class="visual col-6">
+                                <h1 class="reaction-equation">
+                                    Oxaloacetate + NADPH<sup></sup> + H<sup>+</sup> &#8594; Malate Dehydrogenase &#8594; Malate + NADP<sup>+</sup>
+                                </h1>
+                                <img src="/C4-Metabolic-Pathway/cgi-bin/step3.png"/>
+                                <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/HatchSlackpathway2.svg/500px-HatchSlackpathway2.svg.png">Source: Wikimedia</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="step" id="step4">
+                        <h1>Step 4</h1>
+                        <div class="step-content row">
+                            <div class="text col-6">
+                                The Malate enters a bundle-sheath cell via a tube called plasmodesmata. This tube connects bundle-sheath and mesophyll cells.
+                            </div>
+                            <div class="visual col-6">
+                                <img src="/C4-Metabolic-Pathway/cgi-bin/step4.png"/>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="step" id="step5">
+                        <h1>Step 5</h1>
+                        <div class="step-content row">
+                            <div class="text col-6">
+                                Once in the bundle-sheath cell, the malate splits into one molecule of carbon dioxide and one molecule of pyruvate, a 3 carbon molecule. In the process, malate reduces NADP+ to NADPH with the portion left after the carbon dioxide breaks off. The carbon dioxide then enters the Calvin Cycle to complete the light independent reactions. The Calvin Cycle uses the CO<sub>2</sub> and refixes it using the Rubisco Enzyme. This produces 1 G3P molecule per turn, so needs 2 cycles to synthesize one molecule of glucose.
+                            </div>
+                            <div class="visual col-6">
+                                <h1 class="reaction-equation">
+                                    Malate + NADP<sup>+</sup> &#8594; CO<sub>2</sub> + Pyruvate + NADPH
+                                </h1>
+                                <img src="/C4-Metabolic-Pathway/cgi-bin/step5.png"/>
+                                <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/HatchSlackpathway2.svg/500px-HatchSlackpathway2.svg.png">Source: Wikimedia</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="step" id="step6">
+                        <h1>Step 6: The Pyruvate Enters the Mesophyll Cell</h1>
+                        <div class="step-content row">
+                            <div class="text col-6">
+                                The Pyruvate is transported into the mesophyll cell via a second plasmodesmata.
+                            </div>
+                            <div class="visual col-6">
+                                <img src="/C4-Metabolic-Pathway/cgi-bin/step6.png"/>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="step" id="step7">
+                        <h1>Step 7: The PEP is Regenerated</h1>
+                        <div class="step-content row">
+                            <div class="text col-6">
+                                The Pyruvate reacts with a molecule of ATP and an inorganic phosphate group to regenerate PEP and release Adenosine Monophosphate (AMP) and two inorganic phosphate groups as products. This reaction is catalyzed by the enzyme, phosphopyruvic dikinase.
+                            </div>
+                            <div class="visual col-6">
+                                <h1 class="reaction-equation">
+                                    Pyruvate + ATP + P<sub>i</sub> &#8594; PEP + AMP + 2P<sub>i</sub>
+                                </h1>
+                                <img src="/C4-Metabolic-Pathway/cgi-bin/step7.png"/>
+                                <a href="https://fastly.kastatic.org/ka-perseus-images/6576c0741e1ab2544d153c54b4e9baa9a5c6248c.png">Source: Khan Academy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="navigation">
+                    <a class="a-button" id="previousButton">Previous</a>
+                    <a class="a-button" id="nextButton">Next</a>
+                </div>
+            </div>
+
+            <div id="footer-wrapper">
+                <div class="row">
+                    <div class="col-3">
+                        <p class="footer-link">
+                            <a href="/C4-Metabolic-Pathway/content/summary.html">Previous: An Overview</a>
+                        </p>
+                    </div>
+    
+                    <div class="col-6">
+                        <p class="description">
+                            Michael Grieco<br/>
+                            AP Biology<br/>
+                            December 17th, 2018
+                        </p>
+                    </div>
+    
+                    <div class="col-3">
+                        <p class="footer-link">
+                            <a href="/C4-Metabolic-Pathway/content/conclusion.html">Next: The Importance</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const MAX_INDEX = 7;
+            const nextButton = document.getElementById("nextButton");
+            const previousButton = document.getElementById("previousButton");
+        
+            var index = 1;
+            var currentSection = document.getElementById("step" + String(index));
+            currentSection.style.visibility = "visible";
+        
+            function next(event) {
+                currentSection = document.getElementById("step" + String(index));
+                if (index < MAX_INDEX) {
+                    currentSection.style.visibility = "hidden";
+                    index++;
+                    currentSection = document.getElementById("step" + String(index));
+                    currentSection.style.visibility = "visible";
+                } else {
+                    event.stopPropagation();
+                }
+            }
+        
+            function previous(event) {
+                currentSection = document.getElementById("step" + String(index));
+                if (index > 1) {
+                    currentSection.style.visibility = "hidden";
+                    index--;
+                    currentSection = document.getElementById("step" + String(index));
+                    currentSection.style.visibility = "visible";
+                } else {
+                    event.stopPropagation();
+                }
+            }
+        
+            nextButton.onclick = next;
+            previousButton.onclick = previous;
+        </script>
+    </body>
+</html>
